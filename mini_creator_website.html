@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Mini Creator - tạo nhiều mẫu caption bán hàng tiếng Việt nhanh chóng. Dùng thử miễn phí trực tiếp trên web.">
+<title>Mini Creator — Tạo content bán hàng nhanh hơn</title>
+<style>
+:root{--ink:#14264b;--muted:#64748b;--blue:#356dff;--purple:#6544f5;--line:#e3eaf8;--pale:#f3f7ff;--green:#087f75;--white:#fff;--shadow:0 16px 45px rgba(41,74,140,.12)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff;line-height:1.55}a{color:inherit;text-decoration:none}.wrap{width:min(1120px,92%);margin:auto}.nav{position:sticky;top:0;z-index:5;background:#ffffffed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}.navin{display:flex;align-items:center;justify-content:space-between;gap:20px;min-height:70px}.brand{font-weight:850;font-size:21px;letter-spacing:-.5px}.brand span{display:block;font-size:11px;font-weight:500;color:var(--muted);letter-spacing:0}.links{display:flex;gap:23px;font-size:13px;color:#445574}.links a:hover{color:var(--blue)}.btn{display:inline-flex;justify-content:center;align-items:center;gap:8px;border:1px solid transparent;border-radius:12px;padding:12px 18px;font-weight:750;font-size:14px;cursor:pointer;transition:.18s}.primary{background:linear-gradient(110deg,var(--blue),var(--purple));color:white;box-shadow:0 8px 20px #6544f52b}.primary:hover{transform:translateY(-1px);filter:brightness(1.04)}.outline{border-color:#c9d7fa;background:white;color:#23406f}.hero{background:radial-gradient(ellipse at 75% 30%,#e5eaff 0,transparent 42%),linear-gradient(120deg,#f3f8ff,#fff 70%);padding:76px 0 62px}.hero-grid{display:grid;grid-template-columns:1.02fr .98fr;align-items:center;gap:44px}.eyebrow{display:inline-block;padding:6px 11px;border-radius:99px;background:#e7edff;color:#3b55bd;font-size:12px;font-weight:750}.hero h1{font-size:clamp(38px,5vw,60px);line-height:1.04;letter-spacing:-2px;margin:17px 0}.gradient{background:linear-gradient(100deg,#2878ff,#7145ef);background-clip:text;color:transparent}.lead{color:#536580;max-width:560px;font-size:17px}.actions{display:flex;gap:12px;flex-wrap:wrap;margin:25px 0 18px}.checks{display:flex;gap:18px;flex-wrap:wrap;color:#526580;font-size:12px}.checks b{color:var(--green)}.mock{background:#fff;border:1px solid #d9e4fa;border-radius:22px;padding:20px;box-shadow:var(--shadow);transform:rotate(.5deg)}.mocktop{display:flex;justify-content:space-between;font-size:12px;font-weight:800;margin-bottom:13px}.mockgrid{display:grid;grid-template-columns:1fr 1fr;gap:12px}.mockbox{border:1px solid var(--line);background:#fbfcff;border-radius:13px;padding:14px;font-size:12px}.mockbox h3{font-size:13px;margin:0 0 12px}.fakeinput{background:white;border:1px solid #e0e7f3;border-radius:7px;padding:7px;margin:7px 0;color:#65748d}.fakeoutput{margin:8px 0;padding:9px;background:#f1f5ff;border-radius:8px}.section{padding:66px 0}.section.alt{background:#f7f9ff}.section-head{text-align:center;max-width:660px;margin:0 auto 32px}.section-head h2{font-size:clamp(27px,3vw,37px);letter-spacing:-1px;margin:0 0 9px}.section-head p{color:var(--muted);margin:0}.features{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.feature,.pricecard,.step{border:1px solid var(--line);border-radius:16px;padding:21px;background:white}.ico{width:42px;height:42px;display:grid;place-items:center;border-radius:13px;background:#eaf0ff;color:#3c5de8;font-size:21px}.feature h3{font-size:16px;margin:14px 0 6px}.feature p{font-size:13px;color:var(--muted);margin:0}.demo-grid{display:grid;grid-template-columns:.8fr 1.2fr;gap:25px;align-items:start}.panel{background:white;border:1px solid var(--line);border-radius:18px;padding:24px;box-shadow:0 10px 28px #2a4a8810}.panel h3{margin:0 0 5px}.sub{font-size:13px;color:var(--muted);margin:0 0 20px}label{display:block;font-size:12px;font-weight:750;margin:12px 0 5px}input,select,textarea{width:100%;font:inherit;font-size:14px;border:1px solid #d7e0ef;border-radius:9px;padding:10px 11px;background:white;color:var(--ink)}input:focus,select:focus,textarea:focus{outline:2px solid #b9c8ff;border-color:#6e83ff}.twocol{display:grid;grid-template-columns:1fr 1fr;gap:10px}.full{width:100%;margin-top:17px}.results-head{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}.results-head h3{margin:0}.smallbtn{border:1px solid #d7e0ef;background:white;border-radius:8px;padding:8px 10px;cursor:pointer;font-size:12px;font-weight:700}.result{border:1px solid #e4eaf5;border-radius:12px;padding:14px;margin:10px 0;background:#fcfdff}.resulttop{display:flex;justify-content:space-between;gap:10px;align-items:center;font-size:12px;font-weight:800;color:#5263b7}.result p{white-space:pre-wrap;font-size:14px;margin:9px 0 0}.notice{font-size:12px;color:var(--muted);margin-top:12px}.pricing{display:grid;grid-template-columns:repeat(3,1fr);gap:17px;align-items:stretch}.pricecard{padding:25px;position:relative}.pricecard.popular{border:2px solid #7258f5;box-shadow:var(--shadow)}.tag{display:inline-block;font-size:11px;font-weight:800;background:#ece8ff;color:#5b3ed4;border-radius:99px;padding:5px 9px}.price{font-size:36px;font-weight:850;letter-spacing:-1.5px;margin:13px 0 2px}.price small{font-size:12px;font-weight:500;letter-spacing:0;color:var(--muted)}.pricecard p{color:var(--muted);font-size:13px}.pricecard ul{padding-left:18px;color:#4d5f7c;font-size:13px;min-height:100px}.pricecard li{margin:7px 0}.pricecard .btn{width:100%;margin-top:7px}.popularlabel{position:absolute;top:-12px;right:17px}.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:15px}.num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;color:white;background:linear-gradient(120deg,var(--blue),var(--purple));font-weight:800}.step h3{font-size:15px;margin:13px 0 5px}.step p{font-size:13px;color:var(--muted);margin:0}.faq{max-width:780px;margin:auto}.faq details{border-bottom:1px solid var(--line);padding:17px 3px}.faq summary{font-weight:750;cursor:pointer}.faq p{color:var(--muted);font-size:14px}.cta{background:linear-gradient(120deg,#18294c,#283d71);color:white;border-radius:22px;padding:35px;display:flex;align-items:center;justify-content:space-between;gap:22px}.cta p{color:#d4def3;margin-bottom:0}.footer{background:#111d35;color:#e5ebf8;padding:30px 0}.footerin{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footer small{color:#aebbd4}.footerlinks{display:flex;gap:17px;font-size:12px;color:#c8d3e8}.disclaimer{font-size:12px;color:#aebbd4;max-width:680px;margin-top:17px}.mobilemenu{display:none}
+@media(max-width:800px){.links{display:none}.hero{padding:48px 0}.hero-grid,.demo-grid{grid-template-columns:1fr}.mock{transform:none}.features{grid-template-columns:repeat(2,1fr)}.pricing{grid-template-columns:1fr}.steps{grid-template-columns:repeat(2,1fr)}.cta{align-items:flex-start;flex-direction:column}.navin{min-height:62px}}
+@media(max-width:460px){.features,.steps{grid-template-columns:1fr}.twocol{grid-template-columns:1fr}.panel{padding:17px}.hero h1{letter-spacing:-1.3px}.mockgrid{grid-template-columns:1fr}.checks{gap:9px}}
+</style>
+</head>
+<body>
+<header class="nav"><div class="wrap navin">
+<a class="brand" href="#home">🪄 Mini Creator<span>Tạo content • Bán hàng online • Dễ dùng hơn</span></a>
+<nav class="links" aria-label="Điều hướng"><a href="#tinh-nang">Tính năng</a><a href="#demo">Demo miễn phí</a><a href="#bang-gia">Bảng giá</a><a href="#huong-dan">Hướng dẫn</a><a href="#faq">FAQ</a></nav>
+<a class="btn primary" href="#demo">Dùng thử miễn phí</a>
+</div></header>
+<main>
+<section class="hero" id="home"><div class="wrap hero-grid">
+<div><span class="eyebrow">✨ BẢN DEMO ĐANG HOẠT ĐỘNG</span>
+<h1><span class="gradient">Mini Creator</span><br>Tạo content bán hàng<br>nhanh gọn hơn.</h1>
+<p class="lead">Tạo nhiều mẫu caption tiếng Việt từ thông tin sản phẩm của bạn. Chọn phong cách, xem kết quả, sao chép hoặc tải về — ngay trên trình duyệt.</p>
+<div class="actions"><a class="btn primary" href="#demo">🚀 Dùng thử miễn phí</a><a class="btn outline" href="#bang-gia">Xem bảng giá ↗</a></div>
+<div class="checks"><span><b>✓</b> Không cần cài đặt</span><span><b>✓</b> Không cần API trả phí</span><span><b>✓</b> Dùng trên điện thoại và máy tính</span></div>
+</div>
+<div class="mock" aria-label="Minh họa giao diện Mini Creator"><div class="mocktop"><span>🪄 Mini Creator</span><span style="color:#64748b">Bản xem trước</span></div><div class="mockgrid">
+<div class="mockbox"><h3>Thông tin sản phẩm</h3><div class="fakeinput">Tên: Trà đào cam sả</div><div class="fakeinput">Giá: 25.000đ / ly</div><div class="fakeinput">Nền tảng: Facebook</div><div class="fakeinput">Phong cách: Thân thiện, gần gũi</div><div class="btn primary" style="width:100%;font-size:12px">Tạo content</div></div>
+<div class="mockbox"><h3>✨ Kết quả mẫu</h3><div class="fakeoutput">🍑 Giải nhiệt ngày nóng với trà đào cam sả thơm dịu! Chỉ 25k/ly — nhắn tin để đặt nhé.</div><div class="fakeoutput">Một chút ngọt ngào cho ngày bận rộn 🧡 Trà đào cam sả đang chờ bạn!</div><div class="fakeoutput">Team mê trà đào đâu rồi? 👀 Lưu lại món uống hôm nay nha.</div></div>
+</div></div>
+</div></section>
+<section class="section" id="tinh-nang"><div class="wrap"><div class="section-head"><h2>Nhỏ gọn, dễ dùng, đúng việc</h2><p>Công cụ hỗ trợ lên ý tưởng nội dung cho người bán hàng mới bắt đầu.</p></div><div class="features">
+<div class="feature"><div class="ico">⚡</div><h3>Tạo nhiều mẫu</h3><p>Biến một bộ thông tin sản phẩm thành nhiều caption theo mẫu có sẵn.</p></div>
+<div class="feature"><div class="ico">🎨</div><h3>Đổi phong cách</h3><p>Thử giọng thân thiện, chuyên nghiệp, vui vẻ hoặc ngắn gọn.</p></div>
+<div class="feature"><div class="ico">📋</div><h3>Sao chép nhanh</h3><p>Sao chép từng nội dung hoặc toàn bộ kết quả để chỉnh sửa và đăng.</p></div>
+<div class="feature"><div class="ico">💻</div><h3>Chạy ngay trên web</h3><p>Bản demo không cần tài khoản, không gửi dữ liệu đến máy chủ.</p></div>
+</div></div></section>
+<section class="section alt" id="demo"><div class="wrap"><div class="section-head"><h2>Thử Mini Creator miễn phí</h2><p>Nhập thông tin thật của sản phẩm. Demo hiện dùng các mẫu nội dung dựng sẵn, không phải AI tạo văn bản trực tuyến.</p></div>
+<div class="demo-grid">
+<form class="panel" id="creatorForm"><h3>🪄 Thông tin đầu vào</h3><p class="sub">Điền vài mục để tạo caption mẫu.</p>
+<label for="product">Tên sản phẩm / dịch vụ *</label><input id="product" name="product" required maxlength="90" placeholder="Ví dụ: Trà đào cam sả">
+<div class="twocol"><div><label for="price">Giá bán</label><input id="price" name="price" maxlength="40" placeholder="25.000đ / ly"></div><div><label for="platform">Nơi đăng bài</label><select id="platform"><option>Facebook</option><option>TikTok</option><option>Instagram</option><option>Zalo</option><option>Sàn thương mại điện tử</option></select></div></div>
+<label for="benefit">Ưu điểm / lợi ích</label><input id="benefit" maxlength="160" placeholder="Ví dụ: thơm dịu, giao nhanh">
+<label for="audience">Khách hàng mục tiêu</label><input id="audience" maxlength="100" placeholder="Ví dụ: học sinh, dân văn phòng">
+<div class="twocol"><div><label for="tone">Phong cách viết</label><select id="tone"><option value="friendly">Thân thiện, gần gũi</option><option value="pro">Chuyên nghiệp</option><option value="fun">Vui vẻ, bắt trend nhẹ</option><option value="short">Ngắn gọn</option></select></div><div><label for="count">Số mẫu</label><select id="count"><option value="3">3 mẫu</option><option value="5" selected>5 mẫu</option><option value="10">10 mẫu</option><option value="20">20 mẫu</option></select></div></div>
+<button class="btn primary full" type="submit">✨ Tạo content ngay</button><p class="notice">Mẹo: kiểm tra lại giá, thông tin và lời hứa quảng cáo trước khi đăng.</p>
+</form>
+<div class="panel"><div class="results-head"><div><h3>📄 Kết quả của bạn</h3><div class="sub" style="margin:3px 0 0">Nội dung tạo sẽ xuất hiện tại đây.</div></div><button class="smallbtn" type="button" id="copyAll">Sao chép tất cả</button></div>
+<div id="results" aria-live="polite"><div class="result"><div class="resulttop">Mẫu xem trước</div><p>Điền tên sản phẩm bên trái rồi nhấn “Tạo content ngay” để xem các caption gợi ý.</p></div></div>
+<button class="btn outline full" type="button" id="downloadTxt">Tải kết quả (.txt)</button><p class="notice">Đây là bản demo miễn phí. Kết quả cần được bạn kiểm tra và chỉnh sửa trước khi sử dụng.</p></div>
+</div></div></section>
+<section class="section" id="bang-gia"><div class="wrap"><div class="section-head"><h2>Bảng giá dự kiến</h2><p>Các gói dưới đây là đề xuất để thử nghiệm sản phẩm, chưa phải gói thanh toán đang hoạt động.</p></div><div class="pricing">
+<div class="pricecard"><span class="tag">Dùng thử</span><h3>Miễn phí</h3><div class="price">0đ <small>/ mãi mãi</small></div><p>Để bạn trải nghiệm công cụ cơ bản.</p><ul><li>3–5 mẫu mỗi lần</li><li>Một số phong cách viết</li><li>Sao chép và tải TXT</li></ul><a class="btn outline" href="#demo">Dùng ngay</a></div>
+<div class="pricecard popular"><span class="tag popularlabel">Đề xuất</span><span class="tag">Cá nhân</span><h3>Gói Cơ Bản</h3><div class="price">20.000đ <small>/ tháng — dự kiến</small></div><p>Dành cho người bán hàng mới bắt đầu.</p><ul><li>Nhiều mẫu nội dung hơn</li><li>Thêm phong cách viết</li><li>Xuất nội dung dạng TXT</li><li>Hỗ trợ qua email (khi được triển khai)</li></ul><button class="btn primary" type="button" data-plan="Gói Cơ Bản">Đăng ký quan tâm</button></div>
+<div class="pricecard"><span class="tag">Bán hàng thường xuyên</span><h3>Gói Nâng Cao</h3><div class="price">50.000đ <small>/ tháng — dự kiến</small></div><p>Dành cho người cần nhiều nội dung mỗi tuần.</p><ul><li>Nhiều mẫu và phong cách</li><li>Xuất nội dung nâng cao (dự kiến)</li><li>Cập nhật tính năng theo lộ trình</li><li>Ưu tiên hỗ trợ (khi triển khai)</li></ul><button class="btn outline" type="button" data-plan="Gói Nâng Cao">Đăng ký quan tâm</button></div>
+</div><p class="notice" style="text-align:center;margin-top:18px">Chưa có thanh toán trực tuyến, tài khoản thành viên hay tự động mở khóa gói trả phí. Không chuyển tiền dựa trên bảng giá thử nghiệm này.</p></div></section>
+<section class="section alt" id="huong-dan"><div class="wrap"><div class="section-head"><h2>Hướng dẫn sử dụng</h2><p>Bắt đầu trong bốn bước đơn giản.</p></div><div class="steps">
+<div class="step"><div class="num">1</div><h3>Nhập thông tin</h3><p>Điền tên sản phẩm, giá bán và ưu điểm chính xác.</p></div>
+<div class="step"><div class="num">2</div><h3>Chọn phong cách</h3><p>Chọn nền tảng đăng bài, đối tượng và giọng văn phù hợp.</p></div>
+<div class="step"><div class="num">3</div><h3>Tạo caption</h3><p>Nhấn nút tạo content để nhận các mẫu gợi ý.</p></div>
+<div class="step"><div class="num">4</div><h3>Sao chép, chỉnh sửa</h3><p>Kiểm tra thông tin, sửa cho đúng thương hiệu rồi mới đăng.</p></div>
+</div></div></section>
+<section class="section" id="faq"><div class="wrap"><div class="section-head"><h2>Câu hỏi thường gặp</h2></div><div class="faq">
+<details><summary>Mini Creator có dùng AI thật không?</summary><p>Không. Phiên bản demo này ghép nội dung từ các mẫu có sẵn trong trình duyệt. Nếu muốn tích hợp AI thật sau này, cần có backend an toàn, giới hạn chi phí và bảo vệ khóa API.</p></details>
+<details><summary>Thông tin tôi nhập có được gửi đi không?</summary><p>Bản HTML này xử lý dữ liệu ngay trên trình duyệt và không gửi dữ liệu đến máy chủ. Nếu triển khai phiên bản có tài khoản hoặc AI, cần cập nhật chính sách quyền riêng tư.</p></details>
+<details><summary>Tôi có thể mua gói trả phí ngay không?</summary><p>Chưa. Các mức giá đang là giá dự kiến để khảo sát nhu cầu. Cần xây dựng hệ thống tài khoản, xác nhận thanh toán và cấp quyền sử dụng trước khi nhận tiền.</p></details>
+<details><summary>Làm sao triển khai thanh toán thật?</summary><p>Chọn nhà cung cấp phù hợp với Việt Nam, kiểm tra điều kiện độ tuổi, phí, quy định và cách nhận tiền. Vì chủ dự án có thể chưa đủ 18 tuổi, hãy nhờ cha mẹ/người giám hộ đứng tên và quản lý tài khoản khi nhà cung cấp yêu cầu.</p></details>
+</div></div></section>
+<section class="section alt"><div class="wrap"><div class="cta"><div><h2 style="margin:0 0 6px">Bắt đầu bằng bản demo miễn phí</h2><p>Thử công cụ trước, lấy phản hồi rồi mới mở bán gói trả phí.</p></div><a class="btn primary" href="#demo">Thử Mini Creator →</a></div></div></section>
+</main>
+<footer class="footer"><div class="wrap"><div class="footerin"><a class="brand" href="#home" style="color:white">🪄 Mini Creator<span>Tạo content dễ dàng hơn</span></a><div class="footerlinks"><a href="#tinh-nang">Tính năng</a><a href="#bang-gia">Bảng giá</a><a href="#huong-dan">Hướng dẫn</a><a href="#faq">FAQ</a></div><small>© <span id="year"></span> Mini Creator</small></div><p class="disclaimer">Mini Creator hiện là bản thử nghiệm độc lập. Tên thương hiệu, mức giá, điều khoản sử dụng, chính sách quyền riêng tư và thông tin liên hệ cần được hoàn thiện trước khi phát hành công khai. Không có thanh toán thật trong phiên bản này.</p></div></footer>
+<script>
+const $=id=>document.getElementById(id);let lastResults=[];
+const escapeHtml=s=>String(s).replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+function generate(){
+ const product=$('product').value.trim(), price=$('price').value.trim(), platform=$('platform').value, benefit=$('benefit').value.trim(), audience=$('audience').value.trim(), tone=$('tone').value, count=Number($('count').value);
+ if(!product){$('product').focus();return;}
+ const priceText=price?` Giá tham khảo: ${price}.`:'';
+ const benefitText=benefit?` ${benefit.charAt(0).toUpperCase()+benefit.slice(1)}.`:'';
+ const audText=audience?` Phù hợp với ${audience}.`:'';
+ const templates={
+ friendly:[
+ `✨ Đang tìm ${product.toLowerCase()}?${benefitText}${priceText} Nhắn tin để được tư vấn nhé!`,
+ `Gợi ý nhỏ hôm nay: ${product}.${benefitText}${priceText} Lưu lại để tham khảo nha 💙`,
+ `Một lựa chọn đáng cân nhắc: ${product}.${benefitText}${audText}${priceText}`,
+ `Bạn đã thử ${product.toLowerCase()} chưa?${benefitText} Inbox để biết thêm thông tin nhé!`,
+ `📌 ${product} — thông tin ngắn gọn cho bạn.${priceText}${benefitText} Cần tư vấn thì cứ nhắn mình nha.`,
+ `Cảm ơn bạn đã quan tâm đến ${product}!${benefitText}${priceText} Rất vui được hỗ trợ bạn.`,
+ `Nếu đang cần ${product.toLowerCase()}, bạn có thể tham khảo lựa chọn này.${benefitText}${priceText}`,
+ `Chia sẻ cùng bạn: ${product}.${audText}${benefitText} Liên hệ để tìm hiểu thêm nhé.`
+ ],
+ pro:[
+ `${product} — giải pháp dành cho nhu cầu của bạn.${benefitText}${audText}${priceText} Liên hệ để nhận thông tin chi tiết.`,
+ `Tìm hiểu ${product} với thông tin rõ ràng, dễ tham khảo.${benefitText}${priceText}`,
+ `Bạn đang cân nhắc ${product}? Hãy tìm hiểu đặc điểm và lựa chọn phù hợp.${benefitText}${priceText}`,
+ `Thông tin sản phẩm: ${product}.${benefitText}${priceText} Vui lòng nhắn tin để được tư vấn thêm.`,
+ `Mini giới thiệu: ${product}.${audText}${benefitText}${priceText} Chúng tôi sẵn sàng giải đáp thắc mắc.`
+ ],
+ fun:[
+ `👀 Hội mê ${product.toLowerCase()} đâu rồi?${benefitText}${priceText} Ghé xem thử nha!`,
+ `Một chiếc gợi ý cho hôm nay: ${product} ✨${benefitText}${priceText}`,
+ `Lưu ngay kẻo quên 📌 ${product}.${benefitText}${priceText} Bạn thấy sao?`,
+ `Tới lượt ${product} lên sóng! 🎉${benefitText}${priceText} Nhắn tin để hỏi thêm nha.`,
+ `Mood hôm nay: tìm hiểu ${product} 💫${benefitText}${priceText}`
+ ],
+ short:[
+ `${product}.${benefitText}${priceText}`,
+ `Tham khảo ${product} ngay.${priceText}`,
+ `${product} — tìm hiểu thêm qua tin nhắn.`,
+ `${product}.${benefitText} Liên hệ để biết thêm.`,
+ `Đang quan tâm ${product}? Nhắn tin nhé.${priceText}`
+ ]};
+ const arr=templates[tone]||templates.friendly;
+ lastResults=Array.from({length:count},(_,i)=>arr[i%arr.length]+(platform==='TikTok'?' #goiy #review':platform==='Instagram'?' #thamkhao':''));
+ $('results').innerHTML=lastResults.map((s,i)=>`<div class="result"><div class="resulttop"><span>Mẫu ${i+1} · ${escapeHtml(platform)}</span><button class="smallbtn" type="button" data-copy="${i}">Sao chép</button></div><p>${escapeHtml(s)}</p></div>`).join('');
+ $('results').querySelectorAll('[data-copy]').forEach(btn=>btn.addEventListener('click',()=>copyText(lastResults[Number(btn.dataset.copy)],btn)));
+}
+async function copyText(text,btn){try{await navigator.clipboard.writeText(text);if(btn){btn.textContent='Đã sao chép ✓';setTimeout(()=>btn.textContent='Sao chép',1300);}}catch(e){const t=document.createElement('textarea');t.value=text;document.body.appendChild(t);t.select();try{document.execCommand('copy');if(btn)btn.textContent='Đã sao chép ✓';}catch(_){}t.remove();}}
+$('creatorForm').addEventListener('submit',e=>{e.preventDefault();generate();});
+$('copyAll').addEventListener('click',()=>{if(lastResults.length)copyText(lastResults.map((s,i)=>`MẪU ${i+1}\n${s}`).join('\n\n'),$('copyAll'));});
+$('downloadTxt').addEventListener('click',()=>{if(!lastResults.length){alert('Hãy tạo content trước khi tải.');return;}const blob=new Blob([lastResults.map((s,i)=>`MẪU ${i+1}\n${s}`).join('\n\n')],{type:'text/plain;charset=utf-8'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='mini-creator-content.txt';a.click();URL.revokeObjectURL(a.href);});
+document.querySelectorAll('[data-plan]').forEach(b=>b.addEventListener('click',()=>alert('Gói '+b.dataset.plan+' hiện chỉ là mức giá dự kiến. Chưa có thanh toán thật hoặc mở khóa tự động. Hãy dùng demo miễn phí trước nhé.')));
+$('year').textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
